@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-12">
+    <table class="table table-hover text-center  p-5" [ngClass]="{'bg-black2':!bgcolor()}">
+      <thead>
+        <tr>
+          <th>#</th>
+
+
+
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Blood Type</th>
+          <th scope="col">Phone</th>
+          <th scope="col">Government</th>
+        </tr>
+      </thead>
+      <tbody>
+        <div *ngIf="!users"></div>
+
+        <tr *ngFor=" let u of users ;index as i">
+          <td>{{i+1}}</td>
+
+          <td>{{u.firstName}}</td>
+          <td>{{u.email}}</td>
+          <td>{{u.blood_type}}</td>
+          <td>{{u.phone}}</td>
+          <td>{{u.government}}</td>
+
+        </tr>
+
+
+      </tbody>
+
+    </table>
+
+  </div>
+</div>

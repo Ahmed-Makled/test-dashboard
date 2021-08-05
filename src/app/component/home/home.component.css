@@ -1,0 +1,28 @@
+img{
+  width: 18%;
+}
+.btn{
+  background: #C03A2A
+  ;
+
+  color: #fff;
+}
+.btn:hover{
+  background: #cf4333;
+}
+.title{
+  position: relative;
+}
+.images{
+  position: absolute;
+}
+.card{
+  box-shadow: 0px 5px 20px rgb(0 0 0 / 5%);
+
+
+}
+
+.card-body{
+  position: relative;
+  color: #54667a;
+}

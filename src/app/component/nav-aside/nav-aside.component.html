@@ -1,0 +1,30 @@
+<div class="sideNav " [ngClass]="{'bg_black2':!bgcolor()}">
+  <div class=" fw-bold fs-2  mb-3 title ">Blood Bank</div>
+
+
+  <!--SideBar Menu-->
+  <ul class="list-unstyled  mb-5 mt-5">
+    <li class="active">
+      <a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/Home"><span
+          class="fa fa-home mx-3"></span> Home</a>
+    </li>
+    <li>
+      <a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/Users"><span
+          class="fa fa-user mx-3"></span> Users</a>
+    </li>
+    <li>
+      <a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/Allposts"><span
+          class="fa fa-briefcase mx-3"></span> Posts</a>
+    </li>
+    <li>
+      <a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/SignUp"><span
+          class="fa fa-users-cog mx-3"></span> Create Admin</a>
+    </li>
+
+
+
+
+
+  </ul>
+
+</div>

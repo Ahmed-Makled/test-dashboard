@@ -1,0 +1,39 @@
+import { ServicesService } from '../services/apiserve/services.service';
+import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../services/authoServices/auth.service';
+@Component({
+  selector: 'navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.css']
+})
+export class NavbarComponent implements OnInit {
+admin:any
+  constructor(
+    private serve:ServicesService,
+    public authService: AuthService) { }
+
+  ngOnInit(): void {
+   var data=JSON.parse(localStorage.getItem('user')||'').email
+    console.log(data)
+    this.admin=data
+    console.log(this.admin)
+  }
+logo:any='../../../assets/images/logo.jpg';
+sun:any=this.serve.mood;
+dark:any=!this.serve.mood
+
+changmood(){
+  // console.log( this.serve.mood ,this.sun, this.dark)
+  this.serve.mood=!  this.serve.mood;
+  this.sun=this.serve.mood;
+this.dark=!this.serve.mood;
+
+
+}
+
+signOut(){
+  return this.authService.SignOut();
+}
+
+
+}

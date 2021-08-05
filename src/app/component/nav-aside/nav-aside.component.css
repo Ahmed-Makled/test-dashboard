@@ -1,0 +1,46 @@
+
+.sideNav {
+color: black;
+  min-height: 100vh;
+  font-family: "Poppins", Arial, sans-serif;
+  -webkit-box-shadow: 1px 0px 20px rgb(0 0 0 / 8%);
+  box-shadow: 1px 0px 20px rgb(0 0 0 / 8%);
+}
+.title{
+  background: #cf4333; 
+  color: #fff;
+  padding: .44rem;
+
+
+}
+
+
+
+ul li a {
+  padding: 10px 0;
+  color: #54667a;
+  
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  display: block;
+  line-height: 1.8;
+  cursor: pointer;
+}
+.bg_black2 ul li > a{
+  color: #b3b3b3;
+
+
+}
+ul li a:hover,
+.bg_black2 ul li a:hover
+  {
+
+  color: #cf4333;
+}
+ul li.active > a,
+  .bg_black2 ul li.active > a
+{
+
+  color: #cf4333
+  }

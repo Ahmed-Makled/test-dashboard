@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-light  border-bottom ">
+  <div class="container-fluid">
+
+
+    <!--Toogle SideBar-->
+    <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
+    <div class="left-content">
+
+      <ul class="navbar-nav mt-2 mt-lg-0">
+
+        <!--Profile-->
+
+        <li class="nav-item dropdown">
+
+
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle" height="30" alt="" />
+            {{admin}}
+          </a>
+
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item">Setting</a>
+            <a class="dropdown-item" routerLink="/profile">Profile</a>
+            <a class="dropdown-item">Message</a>
+            <div class="dropdown-divider"></div>
+            <a (click)="signOut()"><span class=" dropdown-item fa fa-sign-out-alt">Sign out</span> </a>
+
+          </div>
+        </li>
+        <li>
+          <div *ngIf='sun; then thenBlock else elseBlock'></div>
+
+          <ng-template #thenBlock>
+            <span class="btn-toggel-mode " (click)='changmood()'> <i class="fas fa-moon "></i>
+            </span>
+          </ng-template>
+
+          <ng-template #elseBlock>
+            <span class="btn-toggel-mode" (click)='changmood()'>
+              <i class="fas fa-sun " #moon></i>
+            </span>
+          </ng-template>
+        </li>
+
+      </ul>
+
+
+
+    </div>
+  </div>
+</nav>

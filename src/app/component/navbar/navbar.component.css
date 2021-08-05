@@ -1,0 +1,25 @@
+nav {
+  background-color: #C03A2A;
+  color: #FFF;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+  color: #FFF;
+}
+
+.left-content{
+    margin-left: auto;
+}
+
+
+  .fas{
+    font-size: 25px;
+    color: black;
+    margin-top: .5rem;
+
+
+
+  }
+ .fa-sun {
+   color: #ffc107;
+   
+ }

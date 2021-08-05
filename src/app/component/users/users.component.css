@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+.table{
+  color: #54667a;
+  background: #fff;
+  /* border-collapse:   collapse; */
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+
+
+
+
+}
+th{
+  font-family: 'Lato', sans-serif;  
+  font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.4;
+    background-color: #cf4333;
+    padding-top: 18px;
+    padding-bottom: 18px;
+ 
+}
+td{
+  font-family: 'Lato', sans-serif;
+    color: gray;
+  line-height: 1.4;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.table.bg-black2{
+  background-color:#121519 !important;
+}
+.bg-black2 td{
+  color:#f3f3f3
+}
+tbody, td, tfoot, th, thead, tr{
+      border-style: unset
+
+}

@@ -1,0 +1,55 @@
+<!-- <navbar></navbar> -->
+<div *ngFor="let alert of errors" class="alert alert-danger alert-dismissible fade show" role="alert">
+  {{alert}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<section>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-8 col-12 ">
+
+        <div class="  text-white text-start admin-login p-3">
+          <!---------------------------- image security---------------------------->
+
+          <span>
+            <img src="../../../assets/images/security-icon.png" class="w-25" alt="">
+
+          </span>
+          <span class="fs-3 ms-3 pt-5 fw-bold text-uppercase">Admin Login</span>
+        </div>
+
+
+        <form [formGroup]="loginForm" (ngSubmit)="login()" class="shadow  p-5 ">
+
+
+          <!----------------------------Email---------------------------->
+
+          <div class="mb-3 input-group">
+
+            <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope"></i></span>
+
+            <input type="email" class="form-control shadow-none" [class.is-valid]="loginForm.controls['email'].valid"
+              id="email" [class.is-invalid]="loginForm.controls['email'].invalid" aria-describedby="basic-addon1"
+              placeholder="Email" formControlName="email">
+          </div>
+          <!----------------------------Password---------------------------->
+
+          <div class="mb-3 input-group">
+            <span class="input-group-text" id="basic-addon2"><i class="fas fa-lock"></i></span>
+            <input type="password" class="form-control shadow-none" id="password" aria-describedby="basic-addon2"
+              placeholder="Password" formControlName="password" [class.is-valid]="loginForm.controls['password'].valid"
+              [class.is-invalid]="loginForm.controls['password'].invalid">
+          </div>
+          <!----------------------------button login---------------------------->
+
+          <div class="mb-3 text-center">
+            <button type="submit" class="btn w-50">Login</button>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>

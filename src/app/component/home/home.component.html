@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-3 mb-3 " *ngFor=" let b of blood">
+    <div class="card ">
+      <div class="card-body">
+        <div class="title d-block">
+          <span class="card-title fs-2 fw-bold text-upper-case">{{b}}</span>
+          <img src="../../../assets/images/blood2.png" class="images">
+        </div>
+        <div class="d-block mt-3">
+          <p class="card-text fw-bold">Subscrip:<span class="mx-2 text-muted">
+              {{arr[b]}}</span> </p>
+          <a routerLink='/Users/{{b}}' class="btn ">click to info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
